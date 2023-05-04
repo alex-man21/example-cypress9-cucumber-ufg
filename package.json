@@ -1,0 +1,23 @@
+{
+  "name": "example-cypress-javascript-ufg",
+  "version": "2.0.0",
+  "description": "An example project for Cypress 9 in JavaScript using Applitools Ultrafast Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --spec cypress/integration/cucumber-test/login.feature",
+    "test:non-cucumber": "cypress run --browser chrome",
+    "cypress:open": "cypress open"
+  },
+  "author": "Applitools Team <team@applitools.com> (http://www.applitools.com/)",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.32.1",
+    "cypress": "^9.7.0"
+  },
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
